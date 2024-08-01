@@ -14,7 +14,7 @@ class MainPage extends StatelessWidget{
         children: [
 
           Container(
-            color: Colors.blueAccent,
+            color: Colors.green,
             height: MediaQuery.of(context).size.height/2,
             width: double.infinity,
             child: Center(
@@ -32,7 +32,7 @@ class MainPage extends StatelessWidget{
           ),
 
           Container(
-            color: Colors.redAccent,
+            color: Color.fromARGB(255, 127, 183, 216),
             height: MediaQuery.of(context).size.height/2,
             width: double.infinity,
             child: Center(
@@ -95,7 +95,7 @@ int playerB=0;
           },
           padding: EdgeInsets.zero,
           child: Container(
-            color: Colors.blueAccent,
+            color: Colors.green,
             height: blueCardHeight,
             width: double.infinity,
             alignment: Alignment.topLeft,
@@ -124,7 +124,7 @@ int playerB=0;
         },
         padding: EdgeInsets.zero,
           child: Container(
-            color: Colors.redAccent,
+            color: Color.fromARGB(255, 127, 183, 216),
             height: redCardHeight,
             width: double.infinity,
             alignment: Alignment.bottomLeft,
@@ -151,7 +151,7 @@ resultPage(this.score,this.player);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: player =="a"?Colors.redAccent:Colors.blueAccent,
+      backgroundColor: player =="a"?Color.fromARGB(255, 127, 183, 216):Colors.green,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
